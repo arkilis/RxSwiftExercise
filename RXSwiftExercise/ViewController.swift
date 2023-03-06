@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -14,37 +16,27 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var mobileTextField: UITextField!
   @IBOutlet weak var mobileErrorInfo: UILabel!
+  
+  let disposeBag = DisposeBag()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     
-    
-    emailTextField.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
-    
-    mobileTextField.addTarget(self, action: #selector(mobileTextFieldDidChange(_:)), for: .editingChanged)
-    
+    setupBinding()
   }
   
-  @objc func emailTextFieldDidChange(_ textField: UITextField) {
-    guard let email = textField.text else {
-      return
-    }
-    if email.contains("!") {
-      emailErrorInfo.text = "Invalid character"
-    } else {
-      emailErrorInfo.text = ""
-    }
-  }
-  
-  @objc func mobileTextFieldDidChange(_ textField: UITextField) {
-    guard let email = textField.text else {
-      return
-    }
-    if email.contains("@") {
-      mobileErrorInfo.text = "Invalid character"
-    } else {
-      mobileErrorInfo.text = ""
-    }
+  func setupBinding() {
+    emailTextField.rx.text.changed.subscribe(onNext: {
+      guard let text = $0 else { return }
+      self.emailErrorInfo.text = text.contains("!") ? "Invalid character" : ""
+    }).disposed(by: disposeBag)
+    
+    
+    mobileTextField.rx.text.changed.subscribe(onNext: {
+      guard let text = $0 else { return }
+      self.mobileErrorInfo.text = text.contains("@") ? "Invalid character" : ""
+    }).disposed(by: disposeBag)
   }
 }
 

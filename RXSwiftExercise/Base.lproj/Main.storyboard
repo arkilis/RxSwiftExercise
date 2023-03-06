@@ -11,13 +11,14 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RXSwiftExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="RXSwiftExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email: abc@xyz.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJx-En-TUm" userLabel="Email Text Field">
                                 <rect key="frame" x="16" y="179" width="361" height="44"/>
+                                <accessibility key="accessibilityConfiguration" identifier="email"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="JOS-XK-o5g"/>
                                 </constraints>
@@ -26,6 +27,7 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-0d-DS3">
                                 <rect key="frame" x="16" y="231" width="361" height="25"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailError"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="4nL-gw-yVG"/>
                                 </constraints>
@@ -35,16 +37,18 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile: 12345678" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-Ps-QTe">
                                 <rect key="frame" x="16" y="276" width="361" height="44"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mobile"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-Cl-2y1" userLabel="Mobile Error Info">
                                 <rect key="frame" x="16" y="328" width="361" height="25"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mobileError"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="h2n-tr-KgO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
