@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RXSwiftExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email: abc@xyz.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJx-En-TUm" userLabel="Email Text Field">
+                                <rect key="frame" x="16" y="179" width="361" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JOS-XK-o5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9M-0d-DS3">
+                                <rect key="frame" x="16" y="231" width="361" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4nL-gw-yVG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile: 12345678" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-Ps-QTe">
+                                <rect key="frame" x="16" y="276" width="361" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-Cl-2y1" userLabel="Mobile Error Info">
+                                <rect key="frame" x="16" y="328" width="361" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="h2n-tr-KgO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CJx-En-TUm" secondAttribute="trailing" constant="16" id="8ux-bP-J2a"/>
+                            <constraint firstItem="F9M-0d-DS3" firstAttribute="top" secondItem="CJx-En-TUm" secondAttribute="bottom" constant="8" id="Enc-Qi-jWC"/>
+                            <constraint firstItem="CJx-En-TUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FtM-ED-pGA"/>
+                            <constraint firstItem="fmc-Cl-2y1" firstAttribute="leading" secondItem="F9M-0d-DS3" secondAttribute="leading" id="ZGk-xM-xZ7"/>
+                            <constraint firstItem="IO4-Ps-QTe" firstAttribute="trailing" secondItem="CJx-En-TUm" secondAttribute="trailing" id="b1g-lt-8no"/>
+                            <constraint firstItem="F9M-0d-DS3" firstAttribute="trailing" secondItem="CJx-En-TUm" secondAttribute="trailing" id="dgn-qQ-HeF"/>
+                            <constraint firstItem="F9M-0d-DS3" firstAttribute="leading" secondItem="CJx-En-TUm" secondAttribute="leading" id="f0x-tu-f1K"/>
+                            <constraint firstItem="IO4-Ps-QTe" firstAttribute="top" secondItem="F9M-0d-DS3" secondAttribute="bottom" constant="20" id="gtH-iJ-Gte"/>
+                            <constraint firstItem="CJx-En-TUm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="j3l-Sy-7Ov"/>
+                            <constraint firstItem="fmc-Cl-2y1" firstAttribute="trailing" secondItem="F9M-0d-DS3" secondAttribute="trailing" id="pZB-xK-6Ou"/>
+                            <constraint firstItem="IO4-Ps-QTe" firstAttribute="height" secondItem="CJx-En-TUm" secondAttribute="height" id="rbr-aW-24v"/>
+                            <constraint firstItem="IO4-Ps-QTe" firstAttribute="leading" secondItem="CJx-En-TUm" secondAttribute="leading" id="saM-td-0lc"/>
+                            <constraint firstItem="fmc-Cl-2y1" firstAttribute="top" secondItem="IO4-Ps-QTe" secondAttribute="bottom" constant="8" id="xiY-tz-u6r"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailErrorInfo" destination="F9M-0d-DS3" id="PEP-4F-XWI"/>
+                        <outlet property="emailTextField" destination="CJx-En-TUm" id="tDe-5G-hAz"/>
+                        <outlet property="mobileErrorInfo" destination="fmc-Cl-2y1" id="OKY-De-x1a"/>
+                        <outlet property="mobileTextField" destination="IO4-Ps-QTe" id="WaR-mL-dYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
