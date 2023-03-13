@@ -18,6 +18,7 @@
 		B550628C29B5589500F3F88D /* RXSwiftExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550628B29B5589500F3F88D /* RXSwiftExerciseTests.swift */; };
 		B550629629B5589500F3F88D /* RXSwiftExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550629529B5589500F3F88D /* RXSwiftExerciseUITests.swift */; };
 		B550629829B5589500F3F88D /* RXSwiftExerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550629729B5589500F3F88D /* RXSwiftExerciseUITestsLaunchTests.swift */; };
+		B5B9783029B7D1C6009A577E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B9782F29B7D1C6009A577E /* ViewModel.swift */; };
 		F119CBC7A681C10B4431B4C0 /* Pods_RXSwiftExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E19C0CF8D706A133620DD9B /* Pods_RXSwiftExercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		B550629129B5589500F3F88D /* RXSwiftExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXSwiftExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B550629529B5589500F3F88D /* RXSwiftExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftExerciseUITests.swift; sourceTree = "<group>"; };
 		B550629729B5589500F3F88D /* RXSwiftExerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftExerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5B9782F29B7D1C6009A577E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D8F9149C6A006192754548E2 /* Pods-RXSwiftExercise-RXSwiftExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftExercise-RXSwiftExerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-RXSwiftExercise-RXSwiftExerciseUITests/Pods-RXSwiftExercise-RXSwiftExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD011573DBB8EC5F54F2A3C7 /* Pods-RXSwiftExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftExercise.release.xcconfig"; path = "Target Support Files/Pods-RXSwiftExercise/Pods-RXSwiftExercise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +103,6 @@
 				A88825F6ED589E7AB51D995E /* Pods-RXSwiftExerciseTests.debug.xcconfig */,
 				849B75F91AE67CECBA6C8309 /* Pods-RXSwiftExerciseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +144,7 @@
 				B550627429B5589300F3F88D /* AppDelegate.swift */,
 				B550627629B5589300F3F88D /* SceneDelegate.swift */,
 				B550627829B5589300F3F88D /* ViewController.swift */,
+				B5B9782F29B7D1C6009A577E /* ViewModel.swift */,
 				B550627A29B5589300F3F88D /* Main.storyboard */,
 				B550627D29B5589500F3F88D /* Assets.xcassets */,
 				B550627F29B5589500F3F88D /* LaunchScreen.storyboard */,
@@ -409,6 +411,7 @@
 			files = (
 				B550627929B5589300F3F88D /* ViewController.swift in Sources */,
 				B550627529B5589300F3F88D /* AppDelegate.swift in Sources */,
+				B5B9783029B7D1C6009A577E /* ViewModel.swift in Sources */,
 				B550627729B5589300F3F88D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
